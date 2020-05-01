@@ -1,10 +1,22 @@
 # rak-lechitsa
-Проект по переносу сайта [РАКЛЕЧИТСЯ.РФ](https://raklechitsa.ru/) c Tilda на Vue.js
 
-Прежде, чем приступать к работе над проектом, пожалуйста, [ознакомьтесь с вики-страницей проекта](https://github.com/furtivite-team/rak-lechitsa/wiki). Там описаны правила работы в команде над проектом. 
+> A project for Khabensky Foundation
 
-## Зависимости
-Здесь будут описаны зависимости и необходимый минимум для установки проекта на локальной машине
+## Build Setup
 
-## Посмотреть проект
-Здесь будет находиться ссылка
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
