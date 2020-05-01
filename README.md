@@ -1,2 +1,2 @@
 # rak-lechitsa
-A project for Khabensky Foundation
+Проект по переносу сайта [РАКЛЕЧИТСЯ.РФ](https://raklechitsa.ru/) c Tilda на Vue.js
