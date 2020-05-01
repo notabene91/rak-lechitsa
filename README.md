@@ -1,7 +1,7 @@
 # rak-lechitsa
 
 > A project for Khabensky Foundation
-
+    vsem privet
 ## Build Setup
 
 ```bash
