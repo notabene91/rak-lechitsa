@@ -16,7 +16,7 @@
       <!-- это левый блок-->
       <nav class="header__nav">
         <!-- вот сюда будет подключаться главное меню, на место div's-->
-        <div></div>
+        <main-menu />
         <!-- вот на эту ссылку должен вешаться обработчик, который будет вызывать попап -->
         <span class="header__login link">
           Рассказать историю
@@ -27,7 +27,12 @@
 </template>
 
 <script>
-export default {};
+import MainMenu from '@/components/MainMenu';
+export default {
+  components: {
+    'main-menu': MainMenu,
+  },
+};
 </script>
 
 <style scoped>
@@ -56,5 +61,24 @@ export default {};
 }
 .header__login {
   cursor: pointer;
+}
+.header__nav {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
 }
 </style>
