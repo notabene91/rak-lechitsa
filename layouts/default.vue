@@ -45,7 +45,7 @@ html {
   font-size: 32px;
   line-height: 36px;
 }
-.subtitle {
+.paragraph {
   font-size: 18px;
   line-height: 22px;
 }
