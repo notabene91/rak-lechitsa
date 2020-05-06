@@ -2,9 +2,6 @@
 
 > A project for Khabensky Foundation
 
-## Wiki
-Пожалуйста, ознакомьтесь.
-
 ## Build Setup
 
 ```bash
