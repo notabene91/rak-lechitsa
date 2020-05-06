@@ -59,7 +59,6 @@ html {
   text-decoration: none;
 }
 .btn:hover {
-  background: #613a93;
   opacity: 0.9;
 }
 .large-btn,
