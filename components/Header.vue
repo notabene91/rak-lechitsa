@@ -1,7 +1,15 @@
 <template>
   <header class="header">
     <div class="header__container container">
-      <div class="header__title strong">
+      <nuxt-link
+        v-if="$route.path !== '/'"
+        to="/"
+        class="header__title strong link"
+      >
+        Проект благотворительного фонда<br />
+        Константина Хабенского
+      </nuxt-link>
+      <div v-else class="header__title strong">
         Проект благотворительного фонда<br />
         Константина Хабенского
       </div>
@@ -10,7 +18,7 @@
         <!-- вот сюда будет подключаться главное меню, на место div's-->
         <div></div>
         <!-- вот на эту ссылку должен вешаться обработчик, который будет вызывать попап -->
-        <span class="header__login">
+        <span class="header__login link">
           Рассказать историю
         </span>
       </nav>
