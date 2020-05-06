@@ -45,6 +45,10 @@ html {
   font-size: 32px;
   line-height: 36px;
 }
+.subtitle {
+  font-size: 18px;
+  line-height: 22px;
+}
 
 .btn,
 .btn:visited {
