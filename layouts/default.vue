@@ -124,6 +124,9 @@ html {
   color: inherit;
   text-decoration: none;
 }
+.link:hover {
+  opacity: 0.8;
+}
 
 /* modificators */
 .strong {
