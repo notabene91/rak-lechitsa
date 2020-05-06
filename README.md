@@ -2,8 +2,6 @@
 
 > A project for Khabensky Foundation
 
-yhjdcscmdv
-
 ## Build Setup
 
 ```bash
