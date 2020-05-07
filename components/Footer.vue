@@ -10,6 +10,30 @@
             <main-menu />
           </nav>
         </div>
+        <nav>
+          <p class="footer__social">
+            Мы
+            <a
+              href="https://www.instagram.com/raklechitsa/"
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >в Инстаграме</a
+            >
+            и
+            <a
+              href="https://www.youtube.com/results?search_query=%23%D1%8D%D1%82%D0%BE%D0%BD%D0%B5%D0%BB%D0%B5%D1%87%D0%B8%D1%82%D1%81%D1%8F"
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Youtube</a
+            >
+          </p>
+          <p class="footer__social">
+            <!-- тут временный span -->
+            <span class="share">Поделитесь ↗</span>
+          </p>
+        </nav>
       </div>
       <div class="footer__line">
         <p class="footer__copy">
@@ -52,10 +76,10 @@ export default {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin-bottom: 110px;
 }
 .footer__line:last-of-type {
@@ -84,6 +108,14 @@ export default {
   display: block;
   max-width: 340px;
 }
+.footer__social {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 44px;
+}
+.footer__social:last-of-type {
+  margin-bottom: 0;
+}
 .footer__copy {
   display: block;
   font-size: 18px;
@@ -93,9 +125,9 @@ export default {
   margin-block-end: 0px;
 }
 /* проверить почему ругается */
-/deep/ .active,
-/deep/ .active:visited,
-/deep/ .active:hover {
+.footer /deep/ .active,
+.footer /deep/ .active:visited,
+.footer /deep/ .active:hover {
   text-decoration: none;
 }
 </style>
