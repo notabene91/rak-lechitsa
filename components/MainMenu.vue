@@ -36,14 +36,19 @@ export default {};
   -ms-flex-align: center;
   align-items: center;
   list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0px;
 }
 .menu__item {
   margin-right: 40px;
 }
 .menu__item:last-of-type {
-  margin-right: 40px;
+  margin-right: 0px;
 }
-.active {
+.active,
+.active:visited,
+.active:hover {
   text-decoration: underline;
 }
 </style>
