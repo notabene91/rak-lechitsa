@@ -138,4 +138,7 @@ html {
 .strong {
   font-weight: 600;
 }
+.share {
+  cursor: pointer;
+}
 </style>
