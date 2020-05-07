@@ -2,14 +2,17 @@
   <div>
     <i-header />
     <nuxt />
+    <i-footer />
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 export default {
   components: {
     'i-header': Header,
+    'i-footer': Footer,
   },
 };
 </script>
@@ -134,5 +137,8 @@ html {
 /* modificators */
 .strong {
   font-weight: 600;
+}
+.share {
+  cursor: pointer;
 }
 </style>
