@@ -61,6 +61,7 @@ export default {
 }
 .header__login {
   cursor: pointer;
+  margin-left: 40px;
 }
 .header__nav {
   display: -webkit-flex;
