@@ -28,6 +28,9 @@ html {
   font-size: 18px;
   line-height: 24px;
 }
+body {
+  margin: 0;
+}
 .container {
   max-width: 1320px;
 }
@@ -137,6 +140,10 @@ html {
 /* modificators */
 .strong {
   font-weight: 600;
+}
+.bg_violet {
+  background: #613a93;
+  color: white;
 }
 .share {
   cursor: pointer;

@@ -1,11 +1,16 @@
 <template>
   <div>
-    <h1>Главная</h1>
+    <i-Banner />
   </div>
 </template>
 
 <script>
-export default {};
+import Banner from '@/components/Banner';
+export default {
+  components: {
+    'i-Banner': Banner,
+  },
+};
 </script>
 
 <style></style>
