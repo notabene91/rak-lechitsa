@@ -51,6 +51,13 @@ body {
   font-size: 32px;
   line-height: 36px;
 }
+.caption_big-caption {
+  max-width: 750px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 46px;
+  font-weight: normal;
+}
 .paragraph {
   font-size: 18px;
   line-height: 22px;

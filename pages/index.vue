@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div class="index">
     <i-Banner />
+    <div class="index__container container"></div>
   </div>
 </template>
 
@@ -13,4 +14,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.index__container {
+  margin: 0 auto;
+}
+</style>
