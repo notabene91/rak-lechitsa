@@ -28,6 +28,9 @@ html {
   font-size: 18px;
   line-height: 24px;
 }
+body {
+  margin: 0;
+}
 .container {
   max-width: 1320px;
 }
@@ -47,6 +50,13 @@ html {
   font-weight: 600;
   font-size: 32px;
   line-height: 36px;
+}
+.caption_big-caption {
+  max-width: 750px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 46px;
+  font-weight: normal;
 }
 .paragraph {
   font-size: 18px;
@@ -137,6 +147,10 @@ html {
 /* modificators */
 .strong {
   font-weight: 600;
+}
+.bg_violet {
+  background: #613a93;
+  color: white;
 }
 .share {
   cursor: pointer;
