@@ -36,10 +36,12 @@ export default {
 </script>
 
 <style scoped>
-.header {
-  padding: 0 18px;
-}
+/*.header {
+  padding: 18px 0;
+  max-height: 76px;
+}*/
 .header__container {
+  height: 76px;
   margin: 0 auto;
 
   display: -webkit-flex;
