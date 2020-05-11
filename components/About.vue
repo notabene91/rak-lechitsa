@@ -1,16 +1,15 @@
 <template>
   <section class="about bg_violet">
     <!-- Размер теста в этом заголовке отличен от глобальных -->
-    <h2 class="about__caption caption caption_h2">
+    <h1 class="about__caption caption caption_h1">
       #РАКЛЕЧИТСЯ
-    </h2>
+    </h1>
 
     <!-- Обёртка контента для паддингов -->
     <div class="about__content">
-      <!-- Это тоже заголвок, считаю. По иерархии  получается h3 -->
-      <h3 class="about__heading caption">
+      <h2 class="about__heading caption caption_h2">
         О проекте
-      </h3>
+      </h2>
 
       <div class="about__columns">
         <p class="about__desc paragraph">
@@ -69,9 +68,6 @@ export default {};
 }
 
 .about__heading {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 36px;
   color: #ffffff;
   margin-bottom: 32px;
   text-align: left;

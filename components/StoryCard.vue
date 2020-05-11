@@ -3,6 +3,7 @@
     <!-- Ни разу не пользовался тего пикча
     Не уверен, что правильно сделал.
     Картинки пока не клал в проект-->
+
     <picture class="story-card__picture">
       <source
         srcset="http://ipic.su/img/img7/fs/Tan.1589128962.jpg"
@@ -34,8 +35,8 @@ export default {};
 }
 
 .story-card__picture {
-  max-width: 300px;
-  max-height: 300px;
+  width: 300px;
+  height: 300px;
   margin-bottom: 20px;
 }
 .story-card__author {
@@ -53,5 +54,13 @@ export default {};
   color: #666666;
   padding: 0;
   margin: 0;
+  background-color: #ededed;
+}
+
+@media (max-width: 1280px) {
+  .story-card__picture {
+    width: 265px;
+    height: 265px;
+  }
 }
 </style>

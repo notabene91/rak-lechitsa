@@ -1,10 +1,7 @@
 <template>
   <div class="index">
     <i-Banner />
-
-    <div class="index__container container">
-      <storyCard />
-    </div>
+    <div class="index__container container"></div>
   </div>
 </template>
 
