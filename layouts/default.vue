@@ -155,4 +155,109 @@ body {
 .share {
   cursor: pointer;
 }
+
+/* media queries  */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1180px;
+  }
+  .caption_h1 {
+    font-weight: 800;
+    font-size: 78px;
+    line-height: 94px;
+  }
+  .caption_h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  /* Не знаю, что это такое */
+  .caption_big-caption {
+    max-width: 750px;
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: normal;
+  }
+
+  /* Есть некоторые сомнение, что стоит менять ниже шрифт. Кое-где он остался как в 1440 */
+  .paragraph {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 924px;
+  }
+
+  .caption_h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  /* Не знаю, что это такое */
+  .caption_big-caption {
+    max-width: 750px;
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: normal;
+  }
+
+  /* Есть некоторые сомнение, что стоит менять ниже шрифт.*/
+  .paragraph {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 688px;
+  }
+  .caption_h1 {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+  }
+  .caption_h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  /* Не знаю, что это такое */
+  .caption_big-caption {
+    max-width: 750px;
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 290px;
+  }
+  .caption_h1 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .caption_h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  /* Не знаю, что это такое */
+  .caption_big-caption {
+    max-width: 750px;
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: normal;
+  }
+}
 </style>
