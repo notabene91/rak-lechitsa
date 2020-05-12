@@ -1,5 +1,5 @@
 <template>
-  <section class="tell">
+  <section class="tell container">
     <h2 class="tell__title">Расскажите свою историю</h2>
     <div class="tell__container">
       <p class="tell__text">
@@ -9,8 +9,8 @@
       </p>
 
       <div class="tell__variants">
-        <p class="tell__var tell__var_active">1-й вариант</p>
-        <p class="tell__var">2-й вариант</p>
+        <p class="tell__variant tell__variant_active">1-й вариант</p>
+        <p class="tell__variant">2-й вариант</p>
       </div>
 
       <div class="tell__instruction">
@@ -31,7 +31,7 @@ export default {};
 
 <style scoped>
 .tell {
-  padding: 100px 60px;
+  margin: 0 auto;
   background-color: #f7f7f7;
 }
 
@@ -54,12 +54,12 @@ export default {};
   line-height: 22px;
 }
 
-.tell__var {
+.tell__variant {
   margin: 0 0 10px;
   color: #a2a2a2;
 }
 
-.tell__var_active {
+.tell__variant_active {
   color: #000;
 }
 
