@@ -1,12 +1,15 @@
 <template>
   <div>
-    <h1>Истории</h1>
+    <i-Search />
   </div>
 </template>
 
 <script>
+import Search from '@/components/search';
 export default {
-  components: {},
+  components: {
+    'i-Search': Search,
+  },
 };
 </script>
 
