@@ -11,6 +11,7 @@ import Statistic from '@/components/Statistic';
 import Tell from '@/components/Tell';
 import Overlay from '@/components/ui/Overlay';
 import Popup from '@/components/PopUp';
+
 export default {
   components: {
     'i-Banner': Banner,
@@ -23,7 +24,7 @@ export default {
 </script>
 
 <style>
-.index__container {
+git .index__container {
   margin: 0 auto;
 }
 </style>
