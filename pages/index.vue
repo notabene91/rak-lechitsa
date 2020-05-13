@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style>
-.index__container {
+git .index__container {
   margin: 0 auto;
 }
 </style>
