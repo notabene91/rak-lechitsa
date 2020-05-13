@@ -2,8 +2,6 @@
   <div class="index">
     <i-Banner />
     <div class="index__container container"></div>
-    <tell />
-    <statistic></statistic>
   </div>
 </template>
 
@@ -11,9 +9,13 @@
 import Banner from '@/components/Banner';
 import Statistic from '@/components/Statistic';
 import Tell from '@/components/Tell';
+import Overlay from '@/components/ui/Overlay';
+import Popup from '@/components/PopUp';
 export default {
   components: {
     'i-Banner': Banner,
+    overlay: Overlay,
+    popup: Popup,
     statistic: Statistic,
     tell: Tell,
   },
