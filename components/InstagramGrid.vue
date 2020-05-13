@@ -13,6 +13,7 @@
         </p>
       </div>
       <div class="instagram__grid">
+        <!-- тут надо править под vue -->
         <div class="instagram__grid-item">
           <div class="grey-plug">Заглушка</div>
         </div>
