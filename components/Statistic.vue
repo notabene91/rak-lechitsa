@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import StatisticCard from '@/components/statistic-card';
+import StatisticCard from '@/components/Statistic-card';
 export default {
   components: {
     'statistic-card': StatisticCard,

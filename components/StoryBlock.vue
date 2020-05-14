@@ -1,13 +1,13 @@
 <template>
   <section class="storyblock">
     <h2 class="storyblock__caption caption caption_h2">
-      Истории неизлечимых привычек
+      {{ stories }}
     </h2>
     <div class="storyblock__grid">
       <storyGrid />
     </div>
     <div class="storyblock__button">
-      <button class="storyblock__button large-btn">Больше статей</button>
+      <button class="storyblock__button large-btn">{{ button }}</button>
     </div>
   </section>
 </template>
@@ -17,6 +17,13 @@ import StoryGrid from '@/components/StoryGrid';
 export default {
   components: {
     storyGrid: StoryGrid,
+  },
+
+  data() {
+    return {
+      stories: 'Истории неизлечимых привычек',
+      button: 'Больше статей',
+    };
   },
 };
 </script>
