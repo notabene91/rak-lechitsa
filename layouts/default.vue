@@ -74,6 +74,7 @@ body {
   line-height: 19px;
   text-align: center;
   text-decoration: none;
+  border-style: none;
 }
 .btn:hover {
   opacity: 0.9;
@@ -146,7 +147,7 @@ body {
 
 /* modificators */
 .strong {
-  font-weight: 600;
+  font-weight: 900;
 }
 .bg_violet {
   background: #613a93;
@@ -228,12 +229,16 @@ body {
     line-height: 28px;
   }
 
-  /* Не знаю, что это такое */
+  /* Синий заголовок */
   .caption_big-caption {
     max-width: 750px;
     font-size: 30px;
     line-height: 46px;
     font-weight: normal;
+  }
+
+  .strong {
+    font-weight: 600;
   }
 }
 
@@ -252,7 +257,7 @@ body {
     line-height: 21px;
   }
 
-  /* Не знаю, что это такое */
+  /* это синий заголовок */
   .caption_big-caption {
     max-width: 750px;
     font-size: 30px;
