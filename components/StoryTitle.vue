@@ -46,6 +46,7 @@ export default {};
   display: none;
 }
 
+/* Поставить адаптивную ширину */
 .grey-plug {
   background-color: #ededed;
   width: 580px;
