@@ -17,14 +17,15 @@ export default {};
   margin: 0 auto;
 }
 .search__title {
-  margin-top: 100px;
   max-width: 413px;
   font-weight: 600;
   font-size: 32px;
   line-height: 36px;
+  padding: 100px 0 70px;
+  text-align: left;
 }
 .search__form {
-  margin-top: 60px;
+  padding-bottom: 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -36,5 +37,7 @@ export default {};
   margin-right: 20px;
   width: 100%;
   min-height: 52px;
+}
+@media (max-width: 320px) {
 }
 </style>

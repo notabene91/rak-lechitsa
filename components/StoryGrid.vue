@@ -1,9 +1,10 @@
 <template>
   <section class="story-grid container">
-    <h2 class="story-grid__caption caption caption_h2">
+    <!-- есть в блоке Search -->
+    <!-- <h2 class="story-grid__caption caption caption_h2">
       Истории неизлечимых привычек
-    </h2>
-    <div class="story-grid__container">
+    </h2> -->
+    <div class="container story-grid__container">
       <div class="story-grid__item"><storyCard /></div>
       <div class="story-grid__item"><storyCard /></div>
       <div class="story-grid__item"><storyCard /></div>
@@ -12,6 +13,29 @@
       <div class="story-grid__item"><storyCard /></div>
       <div class="story-grid__item"><storyCard /></div>
       <div class="story-grid__item"><storyCard /></div>
+    </div>
+    <div class="story__buttons">
+      <button class="story__button story__button_active">
+        1
+      </button>
+      <button class="story__button">
+        2
+      </button>
+      <button class="story__button">
+        3
+      </button>
+      <button class="story__button">
+        4
+      </button>
+      <button class="story__button">
+        5
+      </button>
+      <button class="story__button">
+        6
+      </button>
+      <button class="story__button">
+        7
+      </button>
     </div>
 
     <button class="story-grid__button large-btn">Больше статей</button>
@@ -35,13 +59,14 @@ export default {
   justify-content: center;
 }
 
-.story-grid__caption {
+/* .story-grid__caption {
   max-width: 420px;
   padding: 100px 0 70px;
   text-align: left;
-}
+} */
 
 .story-grid__container {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -75,6 +100,22 @@ export default {
   }
   .story-grid__button {
     height: 78px;
+  }
+  .story__buttons {
+    margin: 0 auto;
+    padding-bottom: 40px;
+    max-width: fit-content;
+    /* убрать отступ сверху */
+    margin: 10px auto 0;
+  }
+  .story__button {
+    width: 40px;
+    height: 40px;
+    background: #fbfbfb;
+    border: none;
+    padding: 0;
+    margin-right: 10px;
+    cursor: pointer;
   }
 }
 
@@ -110,12 +151,12 @@ export default {
 }
 
 @media (max-width: 320px) {
-  .story-grid__caption {
+  /* .story-grid__caption {
     font-size: 18px;
     line-height: 21px;
     padding: 50px 0 40px;
     text-align: left;
-  }
+  } */
 
   .story-grid__item {
     margin-bottom: 30px;

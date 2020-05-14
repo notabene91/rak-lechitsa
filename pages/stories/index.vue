@@ -1,14 +1,17 @@
 <template>
   <div>
-    <i-Search />
+    <Search />
+    <StoryGrid />
   </div>
 </template>
 
 <script>
 import Search from '@/components/search';
+import StoryGrid from '@/components/StoryGrid';
 export default {
   components: {
-    'i-Search': Search,
+    Search: Search,
+    StoryGrid: StoryGrid,
   },
 };
 </script>
