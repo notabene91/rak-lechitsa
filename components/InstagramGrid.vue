@@ -63,7 +63,6 @@ export default {
 
 <style scoped>
 .instagram__content {
-  padding: 100px 0 70px;
   display: flex;
   justify-content: space-between;
 }
