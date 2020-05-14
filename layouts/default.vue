@@ -1,5 +1,10 @@
 <template>
   <div>
+    <!--
+      Нужно проверсить слушатели из Header
+    <overlay />
+    <popup />
+    -->
     <i-header />
     <nuxt />
     <i-footer />
@@ -7,12 +12,16 @@
 </template>
 
 <script>
+import Overlay from '@/components/ui/Overlay';
+import PopUp from '@/components/PopUp';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 export default {
   components: {
     'i-header': Header,
     'i-footer': Footer,
+    overlay: Overlay,
+    popup: PopUp,
   },
 };
 </script>
@@ -74,6 +83,7 @@ body {
   line-height: 19px;
   text-align: center;
   text-decoration: none;
+  border-style: none;
 }
 .btn:hover {
   opacity: 0.9;
@@ -81,6 +91,7 @@ body {
 .large-btn,
 .large-btn:hover,
 .large-btn:visited {
+  width: 100%;
   display: -webkit-flex;
   display: -webkit-box;
   display: -moz-flex;
@@ -146,7 +157,7 @@ body {
 
 /* modificators */
 .strong {
-  font-weight: 600;
+  font-weight: 900;
 }
 .bg_violet {
   background: #613a93;
@@ -228,12 +239,16 @@ body {
     line-height: 28px;
   }
 
-  /* Не знаю, что это такое */
+  /* Синий заголовок */
   .caption_big-caption {
     max-width: 750px;
     font-size: 30px;
     line-height: 46px;
     font-weight: normal;
+  }
+
+  .strong {
+    font-weight: 600;
   }
 }
 
@@ -252,7 +267,7 @@ body {
     line-height: 21px;
   }
 
-  /* Не знаю, что это такое */
+  /* это синий заголовок */
   .caption_big-caption {
     max-width: 750px;
     font-size: 30px;

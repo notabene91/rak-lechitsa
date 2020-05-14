@@ -18,14 +18,35 @@
       <div class="video-story__buttons">
         <button class="video-story__button">
           <picture>
-            <source srcset="/img/arrow-button-left.svg" type="image/svg+xml" />
-            <img src="/img/arrow-button-left.png" alt="показать предыдущее" />
+            <source
+              srcset="/img/arrow--horizontal-r.svg"
+              type="image/svg+xml"
+            />
+            <img
+              src="/img/arrow--horizontal-r.png"
+              srcset="
+                /img/arrow--horizontal-r@2x.png 2x,
+                /img/arrow--horizontal-r.png    1x
+              "
+              alt="показать следующее"
+              class="arrow arrow_rotate arrow_inactive"
+            />
           </picture>
         </button>
         <button class="video-story__button">
           <picture>
-            <source srcset="/img/arrow-button-rigth.svg" type="image/svg+xml" />
-            <img src="/img/arrow-button-rigth.png" alt="показать следующее" />
+            <source
+              srcset="/img/arrow--horizontal-r.svg"
+              type="image/svg+xml"
+            />
+            <img
+              src="/img/arrow--horizontal-r.png"
+              srcset="
+                /img/arrow--horizontal-r@2x.png 2x,
+                /img/arrow--horizontal-r.png    1x
+              "
+              alt="показать следующее"
+            />
           </picture>
         </button>
       </div>
@@ -34,7 +55,14 @@
       <div class="video-story__video"></div>
       <p class="video-story__lead">
         Все видео вы можете найте на нашем
-        <a href="#" class="video-story__link link"> YouTube канале.</a>
+        <a
+          href="#"
+          class="video-story__link link"
+          target="_blank"
+          rel="nofollow"
+        >
+          YouTube канале.</a
+        >
       </p>
     </div>
   </section>
@@ -51,10 +79,10 @@ export default {};
   justify-content: space-between;
 }
 .video-story__content {
+  max-width: 31%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 100px 0 100px;
   margin-right: 40px;
 }
 .video-story__text-container {
@@ -86,13 +114,13 @@ export default {};
   cursor: pointer;
 }
 .video-story__container {
-  padding: 100px 0;
+  width: 69%;
   display: flex;
   flex-direction: column;
 }
 
 .video-story__video {
-  width: 867px;
+  max-width: 867px;
   height: 450px;
   background: #ededed;
 }
@@ -106,9 +134,20 @@ export default {};
   text-decoration: underline;
 }
 
+.arrow_rotate {
+  /* зеркалим изображение */
+  transform: scale(-1, -1);
+}
+
+.arrow_inactive {
+  /* делаем полупрозрачным */
+  filter: alpha(Opacity=25);
+  opacity: 0.25;
+}
+
 @media (max-width: 1280px) {
   .video-story__video {
-    width: 773px;
+    max-width: 773px;
     height: 400px;
     background: #ededed;
   }
