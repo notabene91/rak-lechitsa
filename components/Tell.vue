@@ -33,7 +33,6 @@ export default {};
 
 <style scoped>
 .tell {
-  margin: 100px 0;
   padding: 100px 0;
   background-color: #f7f7f7;
 }

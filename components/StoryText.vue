@@ -84,7 +84,7 @@ export default {};
 .story-text__share-button {
   width: 100%;
   max-width: 780px;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #121212;
