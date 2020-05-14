@@ -89,6 +89,13 @@ export default {
   font-size: 16px;
   line-height: 20px;
 }
+.story__buttons {
+  margin: 0 auto;
+  padding-bottom: 40px;
+  max-width: fit-content;
+  /* убрать отступ сверху */
+  margin: 10px auto 0;
+}
 
 @media (max-width: 1280px) {
   .story-grid__caption {
@@ -100,13 +107,6 @@ export default {
   }
   .story-grid__button {
     height: 78px;
-  }
-  .story__buttons {
-    margin: 0 auto;
-    padding-bottom: 40px;
-    max-width: fit-content;
-    /* убрать отступ сверху */
-    margin: 10px auto 0;
   }
   .story__button {
     width: 40px;
