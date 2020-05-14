@@ -74,8 +74,8 @@ export default {};
 
 <style scoped>
 .video-story {
+  padding-top: 100px;
   display: flex;
-
   justify-content: space-between;
 }
 .video-story__content {
@@ -83,7 +83,6 @@ export default {};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 100px 0 100px;
   margin-right: 40px;
 }
 .video-story__text-container {
@@ -116,7 +115,6 @@ export default {};
 }
 .video-story__container {
   width: 69%;
-  padding: 100px 0;
   display: flex;
   flex-direction: column;
 }

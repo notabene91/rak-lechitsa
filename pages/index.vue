@@ -10,7 +10,7 @@
       </div>
       <!-- временные стили до приведения всех padding в единые margin -->
       <div class="index__item" style="margin-bottom: 100px">
-        <storyGrid />
+        <storyBlock />
       </div>
       <div class="index__item">
         <bigCaption v-html="bigCaptions[1].content" />
@@ -35,7 +35,7 @@
 import Banner from '@/components/Banner';
 import VideoStory from '@/components/VideoStory';
 import BigCaption from '@/components/ui/BigCaption';
-import StoryGrid from '@/components/StoryGrid';
+import StoryBlock from '@/components/StoryBlock';
 import InstagramGrid from '@/components/InstagramGrid';
 import Tell from '@/components/Tell';
 import Statistic from '@/components/Statistic';
@@ -46,7 +46,7 @@ export default {
     banner: Banner,
     videoStory: VideoStory,
     bigCaption: BigCaption,
-    storyGrid: StoryGrid,
+    storyBlock: StoryBlock,
     instagramGrid: InstagramGrid,
     tell: Tell,
     statistic: Statistic,
@@ -77,6 +77,6 @@ export default {
 }
 .index__item {
   /* сюда затем пренесу отступы, чтобы не использовать внутренние отступы в блоках */
-  margin-bottom: 0px;
+  margin-bottom: 100px;
 }
 </style>
