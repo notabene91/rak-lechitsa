@@ -78,7 +78,7 @@ export default {};
   justify-content: space-between;
 }
 .story-title__link {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #121212;
