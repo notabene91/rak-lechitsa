@@ -2,9 +2,7 @@
   <section class="instagram container">
     <div class="instagram__content">
       <div class="instagram__brief">
-        <h2 class="instagram__caption caption caption_h2">
-          Инстаграм
-        </h2>
+        <h2 class="instagram__caption caption caption_h2">Инстаграм</h2>
         <p class="instagram__desc">
           Два раза в неделю мы просматриваем все посты по хештегу #этонелечится.
           Все истории, где нет нецензурных выражений и запрещенного контента
@@ -13,45 +11,58 @@
         </p>
       </div>
       <div class="instagram__grid">
-        <div class="instagram__grid-item">
-          <div class="grey-plug">Заглушка</div>
-        </div>
-        <div class="instagram__grid-item">
-          <div class="grey-plug">Заглушка</div>
-        </div>
-        <div class="instagram__grid-item">
-          <div class="grey-plug">Заглушка</div>
-        </div>
-        <div class="instagram__grid-item">
-          <div class="grey-plug">Заглушка</div>
-        </div>
-
-        <div class="instagram__grid-item">
-          <div class="grey-plug">Заглушка</div>
-        </div>
-        <div class="instagram__grid-item">
-          <div class="grey-plug">Заглушка</div>
-        </div>
-        <div class="instagram__grid-item">
-          <div class="grey-plug">Заглушка</div>
-        </div>
-        <div class="instagram__grid-item">
-          <div class="grey-plug">Заглушка</div>
-        </div>
+        <!-- тут надо править под vue -->
+        <instagram-item
+          class="instagram__grid-item"
+          v-for="item in items"
+          :key="item.id"
+        ></instagram-item>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import InstagramGridItem from '@/components/InstagramGrid-item';
 export default {
-  components: {},
+  components: {
+    'instagram-item': InstagramGridItem,
+  },
+  data() {
+    return {
+      items: [
+        {
+          id: '1',
+        },
+        {
+          id: '2',
+        },
+        {
+          id: '3',
+        },
+        {
+          id: '4',
+        },
+        {
+          id: '5',
+        },
+        {
+          id: '6',
+        },
+        {
+          id: '7',
+        },
+        {
+          id: '8',
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style scoped>
 .instagram__content {
-  padding: 100px 0 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -77,31 +88,21 @@ export default {
   max-width: 870px;
   padding-left: 110px;
 }
-.instagram__grid-item {
-  padding-bottom: 30px;
-}
 
-.grey-plug {
+.instagram__grid-item {
   width: 195px;
   height: 195px;
   background-color: #ededed;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 0 30px 30px 0;
+}
+
+.instagram__grid-item:nth-of-type(4n) {
+  margin-right: 0;
 }
 
 @media (max-width: 1280px) {
   .instagram__grid {
     max-width: 792px;
-  }
-  .grey-plug {
-    width: 171px;
-    height: 171px;
-  }
-
-  .instagram__grid-item {
-    padding-bottom: 27px;
   }
 }
 </style>
