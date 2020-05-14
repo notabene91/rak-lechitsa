@@ -5,45 +5,21 @@
     Картинки пока не клал в проект-->
 
     <picture class="story-card__picture">
-      <source
-        srcset="http://ipic.su/img/img7/fs/Tan300.1589372565.jpg"
-        media="(max-width: 320px)"
-      />
-      <source
-        srcset="http://ipic.su/img/img7/fs/Tan216.1589372508.jpg"
-        media="(max-width: 768px)"
-      />
-      <source
-        srcset="http://ipic.su/img/img7/fs/Tan208.1589372479.jpg"
-        media="(max-width: 1024px)"
-      />
-
-      <source
-        media="(max-width: 1280px)"
-        srcset="http://ipic.su/img/img7/fs/Tan265.1589129491.jpg"
-      />
-
-      <source
-        srcset="http://ipic.su/img/img7/fs/Tan.1589128962.jpg"
-        media="(max-width: 1440px)"
-      />
-
-      <img
-        src="http://ipic.su/img/img7/fs/Tan.1589128962.jpg"
-        alt="фотография автора цитаты"
-      />
+      <img :src="picture" alt="фотография автора цитаты" />
     </picture>
     <cite class="story-card__author">
-      Владимир Тен
+      {{ author }}
     </cite>
     <blockquote class="story-card__quote">
-      Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
+      {{ quote }}
     </blockquote>
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ['picture', 'author', 'quote'],
+};
 </script>
 
 <style scoped>
