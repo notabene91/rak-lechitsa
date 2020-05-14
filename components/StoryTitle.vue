@@ -27,6 +27,9 @@ export default {};
 </script>
 
 <style scoped>
+.story-title {
+  margin: 0 auto;
+}
 .story-title__content {
   padding: 100px 0 30px;
   display: flex;

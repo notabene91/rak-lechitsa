@@ -61,8 +61,8 @@ export default {
   flex-direction: column;
   justify-content: center;
 }
-
 .story-grid__container {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
