@@ -16,10 +16,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.id /* deep */ .active,
-.id /* deep */ .active:visited,
-.id /* deep */ .active:hover {
-  text-decoration: none;
-}
-</style>
+<style scoped></style>
