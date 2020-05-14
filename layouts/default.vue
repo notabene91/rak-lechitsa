@@ -1,5 +1,10 @@
 <template>
   <div>
+    <!--
+      Нужно проверсить слушатели из Header
+    <overlay />
+    <popup />
+    -->
     <i-header />
     <nuxt />
     <i-footer />
@@ -7,12 +12,16 @@
 </template>
 
 <script>
+import Overlay from '@/components/ui/Overlay';
+import PopUp from '@/components/PopUp';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 export default {
   components: {
     'i-header': Header,
     'i-footer': Footer,
+    overlay: Overlay,
+    popup: PopUp,
   },
 };
 </script>
@@ -82,6 +91,7 @@ body {
 .large-btn,
 .large-btn:hover,
 .large-btn:visited {
+  width: 100%;
   display: -webkit-flex;
   display: -webkit-box;
   display: -moz-flex;

@@ -67,12 +67,6 @@ export default {
   margin-right: 10px;
   cursor: pointer;
 }
-/* кнопку надо убрать из блока сториез */
-/* ЗАГОЛОВОК ТОЖЕ, СКРЫВАТЬ ЕГО НЕЛЬЗЯ ЭТО ВРЕМЕННАЯ МЕРА*/
-.stories /* deep */ .story-grid__caption,
-.stories /* deep */ .story-grid__button {
-  display: none;
-}
 /* из-за временного скрытия поехали стили */
 .stories /* deep */ .story-grid__container {
   padding-top: 100px;
