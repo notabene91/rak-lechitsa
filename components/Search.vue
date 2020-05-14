@@ -1,5 +1,5 @@
 <template>
-  <div class="search container">
+  <div class="search">
     <h1 class="search__title">Истории неизлечимых привычек</h1>
     <form class="search__form" name="search">
       <input type="text" class="search__input" />

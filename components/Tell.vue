@@ -1,12 +1,14 @@
 <template>
-  <section class="tell container">
-    <h2 class="tell__title">Расскажите свою историю</h2>
-    <div class="tell__container">
-      <p class="tell__text">
-        Мы публикуем новые истории на сайте раз в неделю. Есть 2 варианта
-        поделиться своей историей неизлечимых привычек, навязчивых идей и
-        болезненных привязанностей.
-      </p>
+  <section class="tell">
+    <div class="tell__container container">
+      <div class="tell__caption">
+        <h2 class="tell__title">Расскажите свою историю</h2>
+        <p class="tell__text">
+          Мы публикуем новые истории на сайте раз в неделю. Есть 2 варианта
+          поделиться своей историей неизлечимых привычек, навязчивых идей и
+          болезненных привязанностей.
+        </p>
+      </div>
 
       <div class="tell__variants">
         <p class="tell__variant tell__variant_active">1-й вариант</p>
@@ -31,11 +33,13 @@ export default {};
 
 <style scoped>
 .tell {
-  margin: 0 auto;
+  margin: 100px 0;
+  padding: 100px 0;
   background-color: #f7f7f7;
 }
 
 .tell__container {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
