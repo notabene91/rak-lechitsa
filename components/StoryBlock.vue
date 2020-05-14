@@ -24,7 +24,7 @@ export default {
 <style scoped>
 .storyblock__caption {
   max-width: 420px;
-  padding: 100px 0 70px;
+  margin-bottom: 70px;
   text-align: left;
 }
 .storyblock__button {
