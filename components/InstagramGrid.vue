@@ -77,7 +77,7 @@ export default {
 }
 
 .instagram__desc {
-  color: #666666;
+  color: #666;
   max-width: 340px;
   margin: 0;
 }

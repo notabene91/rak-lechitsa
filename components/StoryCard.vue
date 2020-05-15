@@ -37,14 +37,14 @@ export default {
   font-weight: 600;
   font-size: 22px;
   line-height: 22px;
-  color: #000000;
+  color: #000;
   margin-bottom: 14px;
 }
 .story-card__quote {
   max-width: 250px;
   font-size: 14px;
   line-height: 18px;
-  color: #666666;
+  color: #666;
   padding: 0;
   margin: 0;
 }

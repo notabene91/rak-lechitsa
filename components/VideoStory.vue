@@ -77,7 +77,7 @@ export default {
 .video-story__desc {
   max-width: 340px;
   margin: 0;
-  color: #666666;
+  color: #666;
 }
 
 .video-story__buttons {
@@ -111,7 +111,7 @@ export default {
 .video-story__lead {
   font-size: 12px;
   line-height: 16px;
-  color: #666666;
+  color: #666;
 }
 
 .video-story__link {

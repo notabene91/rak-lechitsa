@@ -68,7 +68,7 @@ export default {};
 }
 
 .about__heading {
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 32px;
   text-align: left;
 }
@@ -94,7 +94,7 @@ export default {};
 .about__fond-name {
   text-align: right;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
   margin: 0 0 10px 0;
 }
 .about__fond-founder {
