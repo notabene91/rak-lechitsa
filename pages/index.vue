@@ -77,6 +77,6 @@ export default {
 }
 .index__item {
   /* сюда затем пренесу отступы, чтобы не использовать внутренние отступы в блоках */
-  margin-bottom: 0px;
+  margin-bottom: 100px;
 }
 </style>

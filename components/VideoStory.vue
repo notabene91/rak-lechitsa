@@ -54,8 +54,8 @@ export default {
 
 <style scoped>
 .video-story {
+  padding-top: 100px;
   display: flex;
-
   justify-content: space-between;
 }
 .video-story__content {

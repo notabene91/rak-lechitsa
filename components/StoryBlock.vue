@@ -1,13 +1,13 @@
 <template>
   <section class="storyblock">
     <h2 class="storyblock__caption caption caption_h2">
-      Истории неизлечимых привычек
+      {{ stories }}
     </h2>
     <div class="storyblock__grid">
       <storyGrid />
     </div>
     <div class="storyblock__button">
-      <button class="storyblock__button large-btn">Больше статей</button>
+      <button class="storyblock__button large-btn">{{ button }}</button>
     </div>
   </section>
 </template>
@@ -18,13 +18,20 @@ export default {
   components: {
     storyGrid: StoryGrid,
   },
+
+  data() {
+    return {
+      stories: 'Истории неизлечимых привычек',
+      button: 'Больше статей',
+    };
+  },
 };
 </script>
 
 <style scoped>
 .storyblock__caption {
   max-width: 420px;
-  padding: 100px 0 70px;
+  margin-bottom: 70px;
   text-align: left;
 }
 .storyblock__button {
@@ -32,7 +39,7 @@ export default {
   height: 82px;
   padding: 0;
   border: none;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
