@@ -79,11 +79,7 @@ export default {};
   margin: 0;
 }
 
-.about__columns {
-  display: flex;
-  justify-content: space-between;
-}
-
+.about__columns,
 .about__maintext {
   display: flex;
   justify-content: space-between;
