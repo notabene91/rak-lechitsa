@@ -30,6 +30,7 @@ export default {
 
 .story-card__picture {
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 .story-card__author {
   font-style: normal;

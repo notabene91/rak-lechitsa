@@ -16,39 +16,12 @@
     Картинки для кнопок положил в static/img   -->
 
       <div class="video-story__buttons">
-        <button class="video-story__button">
-          <picture>
-            <source
-              srcset="/img/arrow--horizontal-r.svg"
-              type="image/svg+xml"
-            />
-            <img
-              src="/img/arrow--horizontal-r.png"
-              srcset="
-                /img/arrow--horizontal-r@2x.png 2x,
-                /img/arrow--horizontal-r.png    1x
-              "
-              alt="показать следующее"
-              class="arrow arrow_rotate arrow_inactive"
-            />
-          </picture>
-        </button>
-        <button class="video-story__button">
-          <picture>
-            <source
-              srcset="/img/arrow--horizontal-r.svg"
-              type="image/svg+xml"
-            />
-            <img
-              src="/img/arrow--horizontal-r.png"
-              srcset="
-                /img/arrow--horizontal-r@2x.png 2x,
-                /img/arrow--horizontal-r.png    1x
-              "
-              alt="показать следующее"
-            />
-          </picture>
-        </button>
+        <div class="video-story__button">
+          <arrowButtonLeft />
+        </div>
+        <div class="video-story__button">
+          <arrowButtonRigth />
+        </div>
       </div>
     </div>
     <div class="video-story__container">
@@ -69,7 +42,14 @@
 </template>
 
 <script>
-export default {};
+import ArrowButtonLeft from '@/components/ui/ArrowButtonLeft';
+import ArrowButtonRigth from '@/components/ui/ArrowButtonRigth';
+export default {
+  components: {
+    arrowButtonLeft: ArrowButtonLeft,
+    arrowButtonRigth: ArrowButtonRigth,
+  },
+};
 </script>
 
 <style scoped>
@@ -103,6 +83,7 @@ export default {};
 .video-story__buttons {
   padding-bottom: 40px;
   max-width: fit-content;
+  display: flex;
 }
 .video-story__button {
   width: 40px;
@@ -112,6 +93,9 @@ export default {};
   padding: 0;
   margin-right: -5px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .video-story__container {
   width: 69%;
@@ -134,15 +118,9 @@ export default {};
   text-decoration: underline;
 }
 
-.arrow_rotate {
-  /* зеркалим изображение */
-  transform: scale(-1, -1);
-}
-
-.arrow_inactive {
-  /* делаем полупрозрачным */
-  filter: alpha(Opacity=25);
-  opacity: 0.25;
+.arrow__pic {
+  max-width: fit-content;
+  margin: 0 auto;
 }
 
 @media (max-width: 1280px) {
@@ -157,3 +135,4 @@ export default {};
   }
 }
 </style>
+gigi

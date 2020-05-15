@@ -46,6 +46,7 @@ export default {};
   display: none;
 }
 
+/* Поставить адаптивную ширину */
 .grey-plug {
   background-color: #ededed;
   width: 580px;
@@ -77,7 +78,7 @@ export default {};
   justify-content: space-between;
 }
 .story-title__link {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #121212;

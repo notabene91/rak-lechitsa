@@ -39,7 +39,7 @@ export default {
   height: 82px;
   padding: 0;
   border: none;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
