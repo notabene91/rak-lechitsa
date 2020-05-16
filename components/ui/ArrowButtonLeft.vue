@@ -1,5 +1,5 @@
 <template>
-  <picture class="arrow__pic">
+  <picture>
     <source srcset="/img/arrow--horizontal-r.svg" type="image/svg+xml" />
     <img
       src="/img/arrow--horizontal-r.png"

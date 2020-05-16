@@ -17,10 +17,10 @@
 
       <div class="video-story__buttons">
         <div class="video-story__button">
-          <arrowButtonLeft />
+          <arrowButtonLeft class="video-story__arrow" />
         </div>
         <div class="video-story__button">
-          <arrowButtonRigth />
+          <arrowButtonRigth class="video-story__arrow" />
         </div>
       </div>
     </div>
@@ -118,7 +118,7 @@ export default {
   text-decoration: underline;
 }
 
-.arrow__pic {
+.video-story__arrow {
   max-width: fit-content;
   margin: 0 auto;
 }
