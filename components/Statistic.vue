@@ -8,6 +8,9 @@
         :info="card.info"
         :numbers="card.numbers"
         :source="card.source"
+        :currentBarValue="card.currentBarValue"
+        :maxBarValue="card.maxBarValue"
+        :oldBarValue="card.oldBarValue"
       ></statistic-card>
     </div>
   </section>

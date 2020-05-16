@@ -36,9 +36,7 @@
         </nav>
       </div>
       <div class="footer__line">
-        <p class="footer__copy">
-          Рак Лечится 2020
-        </p>
+        <p class="footer__copy">Рак Лечится {{ date }}</p>
         <p class="footer__copy">
           Сделано студентами Яндекс Практикум
         </p>
@@ -52,6 +50,11 @@ import MainMenu from '@/components/MainMenu';
 export default {
   components: {
     'main-menu': MainMenu,
+  },
+  data() {
+    return {
+      date: new Date().getFullYear(),
+    };
   },
 };
 </script>

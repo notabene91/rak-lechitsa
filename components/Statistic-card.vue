@@ -1,10 +1,13 @@
 <template>
   <div class="statistic-card">
     <p class="statistic-card__info">{{ info }}</p>
-    <!-- здесь будет встроен прогресс бар -->
+
     <div class="statistic-card__container">
-      <div class="statistic-card__progress"></div>
-      <!-- здесь будет встроен прогресс бар -->
+      <progress-bar
+        :currentBarValue="currentBarValue"
+        :maxBarValue="maxBarValue"
+        :oldBarValue="oldBarValue"
+      ></progress-bar>
       <p class="statistic-card__numbers">{{ numbers }}</p>
       <p class="statistic-card__source">{{ source }}</p>
     </div>
@@ -12,8 +15,19 @@
 </template>
 
 <script>
+import ProgressBar from '@/components/ui/ProgressBar';
 export default {
-  props: ['info', 'numbers', 'source'],
+  components: {
+    'progress-bar': ProgressBar,
+  },
+  props: [
+    'info',
+    'numbers',
+    'source',
+    'currentBarValue',
+    'maxBarValue',
+    'oldBarValue',
+  ],
 };
 </script>
 
