@@ -31,7 +31,7 @@
           </p>
           <p class="footer__social">
             <!-- тут временный span -->
-            <span class="share">Поделитесь ↗</span>
+            <span class="share">Поделитесь &#8599;</span>
           </p>
         </nav>
       </div>
@@ -39,9 +39,12 @@
         <p class="footer__copy">
           Рак Лечится 2020
         </p>
-        <p class="footer__copy">
-          Сделано студентами Яндекс Практикум
-        </p>
+
+        <a
+          class="footer__copy link"
+          href="https://praktikum.yandex.ru/profile/web/"
+          >Сделано студентами Яндекс Практикум
+        </a>
       </div>
     </div>
   </footer>
@@ -49,6 +52,7 @@
 
 <script>
 import MainMenu from '@/components/MainMenu';
+
 export default {
   components: {
     'main-menu': MainMenu,

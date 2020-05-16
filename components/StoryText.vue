@@ -52,7 +52,7 @@
       name="share-button"
       class="story-text__share-button share"
     >
-      Поделитесь этой статьей в своих социальных сетях &#8599;
+      Поделитесь этой статьей в своих социальных сетях ;
     </button>
   </section>
 </template>
