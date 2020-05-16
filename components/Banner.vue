@@ -24,7 +24,7 @@ export default {};
      тут есть подозрение, что баннер должен занимать весь экран
      height: calc(100vh - 78px);
     */
-  min-height: 689px;
+  min-height: calc(100vh - 76px);
   padding-bottom: 40px;
   /* проверить работу postcss плагина */
   display: flex;
