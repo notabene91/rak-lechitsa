@@ -6,7 +6,7 @@
     </h1>
 
     <!-- Обёртка контента для паддингов -->
-    <div class="about__content">
+    <div class="about__content container">
       <h2 class="about__heading caption caption_h2">
         О проекте
       </h2>
@@ -64,7 +64,9 @@ export default {};
 }
 
 .about__content {
-  padding: 0 60px 100px 60px;
+  width: 100%;
+  padding: 0 0 100px 0;
+  margin: 0 auto;
 }
 
 .about__heading {
@@ -79,11 +81,7 @@ export default {};
   margin: 0;
 }
 
-.about__columns {
-  display: flex;
-  justify-content: space-between;
-}
-
+.about__columns,
 .about__maintext {
   display: flex;
   justify-content: space-between;
@@ -91,10 +89,10 @@ export default {};
 .about__subject {
   margin-right: 40px;
 }
+
 .about__fond-name {
   text-align: right;
-  font-weight: 500;
-  color: #fff;
+  color: #c9c9c9;
   margin: 0 0 10px 0;
 }
 .about__fond-founder {
@@ -102,6 +100,13 @@ export default {};
   color: #c9c9c9;
   margin: 0;
 }
+
+/* Навесить на активную надпись */
+.about__fond_ative {
+  font-weight: 500;
+  color: #fff;
+}
+
 .paragraphs {
   max-width: 640px;
   color: #dedede;
@@ -111,5 +116,169 @@ export default {};
 }
 .about__paragraph:last-of-type {
   margin: 0;
+}
+
+@media (max-width: 1280px) {
+  .about__content {
+    padding: 0 0 90px 0;
+  }
+  .about__caption {
+    margin-bottom: 60px;
+    padding-top: 80px;
+    font-size: 58px;
+    line-height: 70px;
+  }
+
+  .about__heading {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .about__desc {
+    max-width: 305px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .paragraphs {
+    max-width: 570px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about__content {
+    padding: 0 0 80px 0;
+  }
+  .about__caption {
+    margin-bottom: 60px;
+    padding-top: 80px;
+    font-size: 52px;
+    line-height: 63px;
+  }
+
+  .about__heading {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .about__desc {
+    max-width: 260px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .about__fond-name {
+    font-size: 15px;
+    line-height: 19px;
+    margin: 0 0 8px 0;
+  }
+
+  .about__fond-founder {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .paragraphs {
+    max-width: 450px;
+  }
+
+  .about__paragraph {
+    font-size: 15px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0 80px 0;
+  }
+
+  .about__columns,
+  .about__maintext {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+
+  .about__heading {
+    margin-bottom: 26px;
+    text-align: center;
+  }
+
+  .about__desc {
+    max-width: 380px;
+    margin: 0 0 80px 0;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .about__subject {
+    margin-bottom: 30px;
+    display: flex;
+    align-content: flex-start;
+  }
+
+  .about__fond-name {
+    font-size: 15px;
+    line-height: 19px;
+    margin: 0 30px 0 0;
+  }
+
+  .about__fond-founder {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .about__fond_ative {
+    font-weight: 500;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+
+  .paragraphs {
+    max-width: 380px;
+  }
+  .about__caption {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .about__content {
+    padding: 50px 0 50px 0;
+  }
+
+  .about__heading {
+    margin: 0 0 16px 0;
+    text-align: left;
+  }
+
+  .about__desc {
+    max-width: 290px;
+    margin: 0 0 40px 0;
+  }
+
+  .about__subject {
+    margin-bottom: 20px;
+  }
+
+  .about__fond-name {
+    font-size: 13px;
+
+    margin: 0 16px 0 0;
+  }
+
+  .about__fond-founder {
+    font-size: 13px;
+  }
+
+  .paragraphs {
+    max-width: 290px;
+  }
 }
 </style>
