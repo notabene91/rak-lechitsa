@@ -49,6 +49,7 @@
 
 <script>
 import MainMenu from '@/components/MainMenu';
+
 export default {
   components: {
     'main-menu': MainMenu,

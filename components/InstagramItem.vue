@@ -1,5 +1,5 @@
 <template>
-  <div class="instagram__grid-item">
+  <div class="instagram-item">
     <slot></slot>
   </div>
 </template>

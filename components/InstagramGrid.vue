@@ -23,10 +23,10 @@
 </template>
 
 <script>
-import InstagramGridItem from '@/components/InstagramGrid-item';
+import InstagramItem from '@/components/InstagramItem';
 export default {
   components: {
-    'instagram-item': InstagramGridItem,
+    'instagram-item': InstagramItem,
   },
   data() {
     return {
