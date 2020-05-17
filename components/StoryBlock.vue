@@ -7,22 +7,23 @@
       <storyGrid />
     </div>
     <div class="storyblock__button">
-      <button class="storyblock__button large-btn">{{ button }}</button>
+      <bigGreyButton />
     </div>
   </section>
 </template>
 
 <script>
 import StoryGrid from '@/components/StoryGrid';
+import BigGreyButton from '@/components/ui/BigGreyButton';
 export default {
   components: {
     storyGrid: StoryGrid,
+    bigGreyButton: BigGreyButton,
   },
 
   data() {
     return {
       stories: 'Истории неизлечимых привычек',
-      button: 'Больше статей',
     };
   },
 };
@@ -33,17 +34,6 @@ export default {
   max-width: 420px;
   margin-bottom: 70px;
   text-align: left;
-}
-.storyblock__button {
-  max-width: 100%;
-  height: 82px;
-  padding: 0;
-  border: none;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 @media (max-width: 1280px) {
@@ -61,11 +51,6 @@ export default {
     font-size: 24px;
     line-height: 28px;
     padding: 80px 0 46px;
-  }
-
-  .storyblock__button {
-    height: 50px;
-    font-size: 13px;
   }
 }
 
@@ -85,9 +70,6 @@ export default {
     line-height: 21px;
     padding: 50px 0 40px;
     text-align: left;
-  }
-  .storyblock__button {
-    margin-top: 10px;
   }
 }
 </style>
