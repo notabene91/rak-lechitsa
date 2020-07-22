@@ -1,6 +1,8 @@
 # rak-lechitsa
 
-> A project for Khabensky Foundation
+> A project for Khabensky Foundation  
+
+`HTML,CSS,NUXT`
 
 ## Build Setup
 
